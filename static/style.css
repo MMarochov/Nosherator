@@ -1,0 +1,25 @@
+/* Pallette:
+#264653
+#2a9d8f
+#e9c46a
+#f4a261
+e76f51
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background: #264653;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #f4a261;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
