@@ -4,11 +4,26 @@ import random
 import re
 
 app = Flask(__name__)
+app.debug = True
+
+phrases = (
+    "The name's Shrond, Shrames Shrond.", 
+    " ♫ ♩ ♬ *autotune* D𝓌ₐsₒₙ D𝓌ₑᵣᵤlₒoₒ",
+    "A wizard is never late, Throdo Thraggins. Nor is he early. He arrives precisely when he means to. - Thrandalf, The Thord of the Things",
+    "You're a wizard, Slarry! - Slagrid",
+    "That'll do Plonkey, that'll do. - Plhrek",
+    "(Smakira, Smakira) Oh baby, when you talk like that, You make a woman go mad. - Smakira",
+    "You know nothing, Flon Flow. - Fgritte, Flame of Flones",
+    "It's Twitney, b*tch. - Twitney Twears/Twichael Twcott",
+    "Quolene, Quolene, Quolene, Quoleₑₑₑene, I'm begging of you please don't take my man. - Quolly Quarton"
+    )
 
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    global random_phrase  # this feels bad but I don't know how to make it better
+    random_phrase = random.choice(phrases)
+    return render_template('index.html', random_phrase=random_phrase)
 
 
 @app.route('/', methods=['POST'])
@@ -22,7 +37,7 @@ def name_prefixed():
     name_split = list(filter(None, name_split))
     vowels = ('a', 'e', 'i', 'o', 'u')
     prefixes = ('B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Qu', 'R', 'S', 'T', 'V',
-                'W', 'X', 'Y', 'Z', 'Sh', 'Fl', 'Ch', 'Th', 'Pl', 'Tw', 'Sl', 'Cl', 'Dw', 'Shr', 'Bl', 'Sm')
+                'W', 'X', 'Y', 'Z', 'Sh', 'Fl', 'Ch', 'Th', 'Pl', 'Tw', 'Sl', 'Cl', 'Dw', 'Shr', 'Bl', 'Sm', 'Shw')
     prefix = random.choice(prefixes)
     name_list = []
     prefixed_name = " "
@@ -35,4 +50,5 @@ def name_prefixed():
             name = name.replace(name[0], prefix)
             name_list.append(name)
     prefixed_name = prefixed_name.join(name_list)
-    return prefixed_name
+
+    return render_template('index.html', prefixed_name=prefixed_name, random_phrase=random_phrase)

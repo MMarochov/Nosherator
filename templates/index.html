@@ -11,11 +11,21 @@
   </head>
   <body>
     <div id="container">
-      <h1>Welcome to the Nosherator!</h1>
+      <div id="title">
+        <h1>Welcome to the Nosherator!</h1>
+        <p id="phrase">{{ random_phrase }}</p>
+      </div>
+      <section id="box">
+        <p id="intro">Enter your name below and watch it magically convert into the perfect nickname.</p>
       <form method="POST">
-        <input name="text" />
-        <input type="submit" />
+        <input name="text" placeholder="Enter Name" />
+        <input type="submit" value="Nosherate!" />
       </form>
+      <p>You shall henceforth be known as:</p>
+      <p id="name">{{ prefixed_name }}</p>
+    </section>
+      <a href="{{ url_for('index') }}"><button>Reset</button></a>
+      <footer>✧･ﾟ: *✧･ﾟ:* Designed and built by Chelio Charochov, inspired by Nosh Nooley and Quatherine Queatherstone ✧･ﾟ: *✧･ﾟ:*</footer>
     </div>
   </body>
 </html>
