@@ -6,6 +6,7 @@ import random
 import re
 
 app = Flask(__name__)
+# app.run(debug=True)
 
 phrases = (
     "The name's Shrond, Shrames Shrond.", 
