@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   background: linear-gradient(
     to top,
     #0a9396,
@@ -20,10 +20,15 @@ body {
     #e0dcc9,
     #ece4d9
   );
+  background-attachment: fixed;
   color: #f1ebe5;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  position: relative;
   justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 0 0;
 }
 
 .subtitle {
