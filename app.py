@@ -52,3 +52,6 @@ def name_prefixed():
     prefixed_name = prefixed_name.join(name_list)
 
     return render_template('index.html', prefixed_name=prefixed_name, random_phrase=random_phrase)
+
+if __name__ == '__main__':
+    app.run()
