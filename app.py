@@ -1,10 +1,11 @@
+# app.py
+
+# Imports
 from flask import Flask, request, render_template
-import string
 import random
 import re
 
 app = Flask(__name__)
-app.debug = True
 
 phrases = (
     "The name's Shrond, Shrames Shrond.", 
@@ -17,7 +18,8 @@ phrases = (
     "It's Twitney, b*tch. - Twitney Twears/Twichael Twcott",
     "Quolene, Quolene, Quolene, Quoleₑₑₑene, I'm begging of you please don't take my man. - Quolly Quarton"
     )
-
+vowels = ('a', 'e', 'i', 'o', 'u')
+prefixes = ('B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Qu', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z', 'Sh', 'Fl', 'Ch', 'Th', 'Pl', 'Tw', 'Sl', 'Cl', 'Dw', 'Shr', 'Bl', 'Sm', 'Shw', 'Fr', 'Gr', 'Sch', 'Shl', 'Moo')
 
 @app.route("/")
 def index():
@@ -35,9 +37,6 @@ def name_prefixed():
     name_split = name_lower.split(" ")
     # remove any empty strings in list
     name_split = list(filter(None, name_split))
-    vowels = ('a', 'e', 'i', 'o', 'u')
-    prefixes = ('B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Qu', 'R', 'S', 'T', 'V',
-                'W', 'X', 'Y', 'Z', 'Sh', 'Fl', 'Ch', 'Th', 'Pl', 'Tw', 'Sl', 'Cl', 'Dw', 'Shr', 'Bl', 'Sm', 'Shw')
     prefix = random.choice(prefixes)
     name_list = []
     prefixed_name = " "

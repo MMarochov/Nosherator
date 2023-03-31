@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,20 +14,27 @@
   <body>
     <div id="container">
       <div id="title">
-        <h1>Welcome to the Nosherator!</h1>
+        <p class="subtitle milky">Welcome to</p>
+        <h1 class="milky">the Nosherator!</h1>
         <p id="phrase">{{ random_phrase }}</p>
       </div>
       <section id="box">
-        <p id="intro">Enter your name below and watch it magically convert into the perfect nickname.</p>
-      <form method="POST">
-        <input name="text" placeholder="Enter Name" />
-        <input type="submit" value="Nosherate!" />
-      </form>
-      <p>You shall henceforth be known as:</p>
-      <p id="name">{{ prefixed_name }}</p>
-    </section>
+        <p id="intro">
+          Enter your name below and watch it magically convert into the perfect
+          nickname.
+        </p>
+        <form method="POST">
+          <input name="text" placeholder="Enter Name" />
+          <input type="submit" value="Nosherate!" />
+        </form>
+        <p>You shall henceforth be known as:</p>
+        <p id="name">{{ prefixed_name }}</p>
+      </section>
       <a href="{{ url_for('index') }}"><button>Reset</button></a>
-      <footer>✧･ﾟ: *✧･ﾟ:* Designed and built by Chelio Charochov, inspired by Nosh Nooley and Quatherine Queatherstone ✧･ﾟ: *✧･ﾟ:*</footer>
+      <footer>
+        ✧･ﾟ: *✧･ﾟ:* Designed and built by Chelio Charochov, inspired by Nosh
+        Nooley and Quatherine Queatherstone ✧･ﾟ: *✧･ﾟ:*
+      </footer>
     </div>
   </body>
 </html>
