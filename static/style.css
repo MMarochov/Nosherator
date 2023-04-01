@@ -141,6 +141,10 @@ input::placeholder {
   font-size: 1.1em;
 }
 
+form {
+  margin: 10px 0;
+}
+
 #reset {
   margin: 15px 0;
 }
@@ -167,4 +171,25 @@ footer {
   #box {
     box-shadow: none;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1ebe5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #005f73;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7abdaa;
 }
