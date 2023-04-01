@@ -17,7 +17,11 @@ phrases = (
     "(Smakira, Smakira) Oh baby, when you talk like that, you make a woman go mad. - Smakira",
     "You know nothing, Flon Flow. - Fgritte, Flame of Flones",
     "It's Twitney, b*tch. - Twitney Twears/Twichael Twcott",
-    "Quolene, Quolene, Quolene, Quoleₑₑₑene, I'm begging of you please don't take my man. - Quolly Quarton"
+    "Quolene, Quolene, Quolene, Quoleₑₑₑene, I'm begging of you please don't take my man. - Quolly Quarton",
+    "Run, Zorrest, run! - Zenny, Zorrest Zump",
+    "Blobby has no master. Blobby is a free elf, and Blobby has come to save Blarry Blotter and his friends! - Blobby",
+    "Hello. My name is Frinigo Frontoya. You killed my father. Prepare to die. - Frinigo Frontoya, Frhe Frincess Fride",
+    "I have a vewy gweat fwiend in Wome called 'Twiggus Twickus'. - Twilate, Twonty Twython's Twife of Twrian"
     )
 vowels = ('a', 'e', 'i', 'o', 'u')
 prefixes = ('B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Qu', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z', 'Sh', 'Fl', 'Ch', 'Th', 'Pl', 'Tw', 'Sl', 'Cl', 'Dw', 'Shr', 'Bl', 'Sm', 'Shw', 'Fr', 'Gr', 'Sch', 'Shl', 'Moo')
