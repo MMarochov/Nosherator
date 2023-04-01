@@ -14,7 +14,7 @@ phrases = (
     "A wizard is never late, Throdo Thraggins. Nor is he early. He arrives precisely when he means to. - Thrandalf, The Thord of the Things",
     "You're a wizard, Slarry! - Slagrid",
     "That'll do Plonkey, that'll do. - Plhrek",
-    "(Smakira, Smakira) Oh baby, when you talk like that, You make a woman go mad. - Smakira",
+    "(Smakira, Smakira) Oh baby, when you talk like that, you make a woman go mad. - Smakira",
     "You know nothing, Flon Flow. - Fgritte, Flame of Flones",
     "It's Twitney, b*tch. - Twitney Twears/Twichael Twcott",
     "Quolene, Quolene, Quolene, Quoleₑₑₑene, I'm begging of you please don't take my man. - Quolly Quarton"
