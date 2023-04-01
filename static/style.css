@@ -153,7 +153,8 @@ footer {
   font-size: 0.8em;
   color: #005f73;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 800px) {
