@@ -153,8 +153,7 @@ footer {
   font-size: 0.8em;
   color: #005f73;
   font-weight: bold;
-  padding: 20px;
-  margin: 15px;
+  margin: 25px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -185,7 +184,7 @@ footer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #005f73;
+  background: #7abdaa;
   border-radius: 10px;
 }
 
