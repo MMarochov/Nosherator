@@ -14,4 +14,3 @@ To run in Dev mode:
 Deployed using PythonAnywhere:
 - [Deploying Flask apps with PythonAnywhere](https://help.pythonanywhere.com/pages/Flask/)
 
-test push from new laptop
